@@ -1,0 +1,229 @@
+.volunteer-hero {
+  background: linear-gradient(135deg, var(--secondary-green) 0%, var(--primary-blue) 100%);
+  color: white;
+  text-align: center;
+  padding: var(--spacing-8) 0;
+}
+
+.volunteer-hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: var(--spacing-3);
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  max-width: 700px;
+  margin: 0 auto;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+.why-volunteer-section {
+  background: white;
+}
+
+.why-volunteer-section h2 {
+  text-align: center;
+  margin-bottom: var(--spacing-6);
+  color: var(--neutral-800);
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-4);
+}
+
+.benefit-card {
+  text-align: center;
+  padding: var(--spacing-5);
+}
+
+.benefit-icon {
+  font-size: 3rem;
+  margin-bottom: var(--spacing-3);
+}
+
+.benefit-card h3 {
+  color: var(--neutral-800);
+  margin-bottom: var(--spacing-2);
+}
+
+.benefit-card p {
+  color: var(--neutral-600);
+}
+
+.form-section {
+  background: var(--neutral-50);
+}
+
+.form-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  padding: var(--spacing-6);
+  border-radius: var(--border-radius-xl);
+  box-shadow: var(--shadow-lg);
+}
+
+.form-header {
+  text-align: center;
+  margin-bottom: var(--spacing-6);
+}
+
+.form-header h2 {
+  color: var(--neutral-800);
+  margin-bottom: var(--spacing-2);
+}
+
+.form-header p {
+  color: var(--neutral-600);
+  font-size: 1.125rem;
+}
+
+.volunteer-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+}
+
+.form-section-title {
+  margin: var(--spacing-4) 0 var(--spacing-2) 0;
+  padding-bottom: var(--spacing-1);
+  border-bottom: 2px solid var(--neutral-200);
+}
+
+.form-section-title h3 {
+  color: var(--neutral-800);
+  margin: 0;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-3);
+}
+
+.checkbox-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-2);
+  margin-top: var(--spacing-1);
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-1);
+  cursor: pointer;
+  padding: var(--spacing-1);
+  border-radius: var(--border-radius);
+  transition: background-color 0.2s ease;
+}
+
+.checkbox-label:hover {
+  background-color: var(--neutral-50);
+}
+
+.checkbox-input {
+  margin: 0;
+  cursor: pointer;
+}
+
+.checkbox-text {
+  font-size: 0.9rem;
+  color: var(--neutral-700);
+}
+
+.newsletter-label {
+  background: var(--neutral-50);
+  padding: var(--spacing-2);
+  border-radius: var(--border-radius);
+  margin-top: var(--spacing-2);
+}
+
+.form-submit {
+  margin-top: var(--spacing-4);
+  text-align: center;
+}
+
+.submit-btn {
+  padding: var(--spacing-3) var(--spacing-6);
+  font-size: 1.125rem;
+  margin-bottom: var(--spacing-2);
+}
+
+.form-note {
+  color: var(--neutral-500);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* Success page styles */
+.success-section {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: white;
+}
+
+.success-content {
+  max-width: 600px;
+  padding: var(--spacing-6);
+}
+
+.success-icon {
+  font-size: 4rem;
+  margin-bottom: var(--spacing-4);
+}
+
+.success-content h1 {
+  color: var(--secondary-green);
+  margin-bottom: var(--spacing-3);
+}
+
+.success-content p {
+  color: var(--neutral-600);
+  font-size: 1.125rem;
+  margin-bottom: var(--spacing-3);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .volunteer-hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.125rem;
+  }
+  
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .form-container {
+    margin: 0 var(--spacing-2);
+    padding: var(--spacing-4);
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+  
+  .checkbox-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .submit-btn {
+    width: 100%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
